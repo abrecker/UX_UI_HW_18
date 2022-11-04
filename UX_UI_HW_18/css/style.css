@@ -1,0 +1,99 @@
+.flexContainer {
+    display:flex;
+    flex-direction: row;
+    background-color: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.flexItem {
+    background-color: #efeae1;
+    outline-style: solid;
+    outline-color: #464485;
+    outline-width: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    padding-top: 15px;
+    width: 33%;
+    color:#464485
+}
+
+.mySkills {
+    text-align: center;
+    color:#464485;
+    font-weight:400;
+}
+
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border: 1px solid #464485;
+}
+
+.grid1{
+    grid-area: 1/2/1/4;
+    background-color: #efeae1;
+    border: 1px solid #464485;
+}
+/*create custom image to fit elongated area without cutting off words*/
+
+.grid2{
+    grid-area: 1/1/1/1;
+    text-align: center;
+    margin-top: 60px;
+    color:#464485;
+}
+
+.grid3{
+    grid-area: 2/2/2/4;
+    background-color: #efeae1;
+    border: 1px solid #464485;
+}
+/*create custom image to fit elongated area without cutting off words*/
+
+.grid4{
+    grid-area: 2/1/2/1;
+    text-align: center;
+    margin-top: 60px;
+    color: #464485;
+}
+
+.Title{
+    color: #464485;
+    text-align: center;
+}
+
+.end{
+    text-align: end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: none;
+    margin: 10px;
+    padding: 10px;
+    }
+
+    .flexItem{
+        background-color: #efeae1;
+        outline-style: solid;
+        outline-color: #464485;
+        outline-width: 5px;
+        text-align: center;
+        margin: 10px;
+        padding: 5px;
+        padding-top: 15px;
+        width: 100%;
+        color:#464485
+    }
+
+    .workGrid{
+        grid-template-rows: 300px 300px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
